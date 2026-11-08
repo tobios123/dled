@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<show application="DLED" version="1.19.0">
+    <system>
+        <host>
+            <os>Windows</os>
+            <ips>
+                <ip>192.168.1.171</ip>
+            </ips>
+        </host>
+        <device>
+            <mac>02:00:00:00:00:01</mac>
+            <ip>192.168.1.12</ip>
+            <subnet>255.255.255.0</subnet>
+            <dhcp>true</dhcp>
+            <pcb_version>2.0</pcb_version>
+            <firmware_version>1.29</firmware_version>
+            <type>LPU-1</type>
+        </device>
+    </system>
+    <fixtures>
+        <fixture index="0" label="fixt 1" address="1" manufacturer="Aeson" model="Lumis Beam 5R" profile="0203222314800C0109800B800F101080" invert_pan="true" />
+        <fixture index="1" label="fixt 2" address="17" manufacturer="Aeson" model="Lumis Beam 5R" profile="0203222314800C0109800B800F101080" invert_tilt="true" />
+        <fixture index="2" address="33" manufacturer="Aeson" model="Lumis Beam 5R" profile="0203222314800C0109800B800F101080" swap_pan_tilt="true" />
+        <fixture index="3" address="49" manufacturer="Aeson" model="Lumis Beam 5R" profile="0203222314800C0109800B800F101080" virtual_dimmer="true" />
+    </fixtures>
+    <playbacks />
+</show>

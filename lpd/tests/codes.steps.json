@@ -1,0 +1,40 @@
+{
+  "about": "Idle and cue values of the function codes the library does not use: one fixture with codes 14-1F, 20, 34-3F, 40, 7F, 80, 81, FF (40 channels) at DMX 1; pb1 sets every record attribute to a different value.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "idle"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "cue"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    }
+  ]
+}

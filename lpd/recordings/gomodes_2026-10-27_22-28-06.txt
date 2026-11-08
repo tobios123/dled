@@ -1,0 +1,30 @@
+LPD test "gomodes", 2026-10-27_22-28-06, artnet universe 16
+F1, F2 P10. pb1 Toggle (F1 red), pb2 Flash mode (F1 green), pb3 Solo (F1 blue), pb4 Go (F2 white), pb5 Go with fader 30 % (F1 red, In 50 %): the FLASH button on it idle and running, pb6 Go with a 2 s fade: FLASH.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue   toggle ontoggle offflash heldflash let go      solosolo flashedsolo flash upflash idleflash idle uprunning 30%flash runningflash running upflash fade 0.6flash fade 2.1flash fade up
+   1  01    intensity          255         255         0       255         0         0       255         0       128         0        38       128        38       255       255       175
+   2  02    pan                127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+   6  04    red                255         255         0         0         0         0         0         0       255         0       255       255       255         0         0         0
+   7  05    green                0           0         0       255         0         0         0         0         0         0         0         0         0        76       255       175
+   8  06    blue                 0           0         0         0         0         0       255         0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue   toggle ontoggle offflash heldflash let go      solosolo flashedsolo flash upflash idleflash idle uprunning 30%flash runningflash running upflash fade 0.6flash fade 2.1flash fade up
+  11  01    intensity            0           0         0         0         0       255         0       255         0         0         0         0         0         0         0         0
+  12  02    pan                127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  17  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0       255       255       255         0         0         0         0         0         0         0         0
+
+Other channels not 0 (toggle on / toggle off / flash held / flash let go / solo / solo flashed / solo flash up / flash idle / flash idle up / running 30% / flash running / flash running up / flash fade 0.6 / flash fade 2.1 / flash fade up): none

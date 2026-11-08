@@ -1,0 +1,17 @@
+LPD test "memory_flash", 2026-10-28_09-10-18, artnet universe 16
+F1 P10. Do Flash / Solo go modes and the FLASH button use and set the intensity memory? Each cue In 80 %, fade 3 s, on a playback not used since the power cycle. pb50 Flash (R) and pb51 Solo (G): GO held 4 s, let go, GO held again. pb52 Go (B): FLASH 1 s, then GO.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue  pb50 held 0.25pb50 held 4pb50 again 0.25pb51 held 0.25pb51 held 4pb51 again 0.25pb52 flash 0.25pb52 go 0.25 pb52 go 4
+   1  01    intensity          204          20       204       204        17       204       204        17       204       204
+   2  02    pan                127         127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+   6  04    red                255          25       255        23         0         0         0         0         0         0
+   7  05    green                0           0         0         0        21       255        23         0         0         0
+   8  06    blue                 0           0         0         0         0         0         0        21        23       255
+   9  07    amber                0           0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (pb50 held 0.25 / pb50 held 4 / pb50 again 0.25 / pb51 held 0.25 / pb51 held 4 / pb51 again 0.25 / pb52 flash 0.25 / pb52 go 0.25 / pb52 go 4): none

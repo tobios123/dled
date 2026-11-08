@@ -1,0 +1,240 @@
+{
+  "about": "F1, F2 P10. What CLEAR with EDIT closed keeps: F1 In 100 % R, F2 In 50 % G set in EDIT; (a) EDIT closed and opened, no CLEAR; (b) closed, CLEAR, opened (F2 selected last); (c) set again with F1 selected last, closed, CLEAR, opened; (d) CLEAR in EDIT.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 255,
+        "R": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        1
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 128,
+        "G": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "set, F2 last"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "a closed"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "a reopened"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "b cleared closed"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "b reopened"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "b cleared in edit"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        1
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 128,
+        "G": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 255,
+        "R": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "set, F1 last"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "c cleared closed"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "c reopened"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "d cleared in edit"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "about": "F1 (P10). pb1: Ramp at FX speed 50 %, the playback speed knob from -1 to +1 in steps of 0.1, 4 s each. pb2 Ramp at FX speed -50 %. pb3 Sinus at FX speed 5 %, pb4 at 1 % (25 s each). pb5 / pb6 Circle at 100 / 25 %, pb7 Rainbow at 100 %. 4 fixtures, 30 / 30 / 20 / 15 s: pb8 colour Random, pb9 Full Twinkle, pb10 intensity Random, pb11 position Random.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -1.0
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.9
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.8
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.7
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.6
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.5
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.4
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.3
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.2
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.1
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.1
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.2
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.3
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.4
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.6
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.7
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.8
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.9
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "snap",
+      "name": "pb2"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 25000
+    },
+    {
+      "op": "snap",
+      "name": "pb3"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 25000
+    },
+    {
+      "op": "snap",
+      "name": "pb4"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb5"
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 12000
+    },
+    {
+      "op": "snap",
+      "name": "pb6"
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb7"
+    },
+    {
+      "op": "release",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 30000
+    },
+    {
+      "op": "snap",
+      "name": "pb8"
+    },
+    {
+      "op": "release",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 30000
+    },
+    {
+      "op": "snap",
+      "name": "pb9"
+    },
+    {
+      "op": "release",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 20000
+    },
+    {
+      "op": "snap",
+      "name": "pb10"
+    },
+    {
+      "op": "release",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 10
+    },
+    {
+      "op": "wait",
+      "ms": 15000
+    },
+    {
+      "op": "snap",
+      "name": "pb11"
+    },
+    {
+      "op": "release",
+      "pb": 10
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    }
+  ]
+}

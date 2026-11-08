@@ -1,0 +1,64 @@
+LPD test "static", 2026-10-27_21-27-46, artnet universe 16
+Patch and static values: probe 1 at DMX 1 gets a cue with a different value in every record byte; probe 2 at DMX 101 is in no cue. Idle, the cue at full, the playback fader at 50 % and 0 %, and after release.
+
+Fixture 1 "Probe 1" at DMX 1 (Probe, 27 ch)
+  ch  code  channel            cue        idle       cue fader 50%  fader 0%fader 100%  released
+   1  01    intensity           25           0        25        12         0        25         0
+   2  21    intensity fine?     34           0        34       144         0        34         0
+   3  02    pan                131         127       131       131       131       131       127
+   4  22    pan fine             9         255         9         9         9         9       255
+   5  03    tilt               142         127       142       142       142       142       127
+   6  23    tilt fine           21         255        21        21        21        21       255
+   7  04    red                 47           0        47        47        47        47         0
+   8  24    red fine?           58           0        58        58        58        58         0
+   9  05    green               58           0        58        58        58        58         0
+  10  06    blue                69           0        69        69        69        69         0
+  11  07    amber               80           0        80        80        80        80         0
+  12  08    white               91           0        91        91        91        91         0
+  13  09    colour wheel        36           0        36        36        36        36         0
+  14  0a    gobo               102           0       102       102       102       102         0
+  15  0b    gobo rotation      113           0       113       113       113       113         0
+  16  0c    shutter            124           0       124       124       124       124         0
+  17  0d    iris               135           0       135       135       135       135         0
+  18  0e    frost              146           0       146       146       146       146         0
+  19  0f    focus              157           0       157       157       157       157         0
+  20  10    prism              168           0       168       168       168       168         0
+  21  11    zoom               179           0       179       179       179       179         0
+  22  12    custom 1           190           0       190       190       190       190         0
+  23  13    UV / custom 2?     201           0       201       201       201       201         0
+  24  14    pan/tilt speed                   0         0         0         0         0         0
+  25  80    no fader                         0         0         0         0         0         0
+  26  00    code 00?                         0         0         0         0         0         0
+  27  15    code 15?                         0         0         0         0         0         0
+
+Fixture 2 "Probe 2" at DMX 101 (Probe, 27 ch)
+  ch  code  channel            cue        idle       cue fader 50%  fader 0%fader 100%  released
+ 101  01    intensity            0           0         0         0         0         0         0
+ 102  21    intensity fine?      0           0         0         0         0         0         0
+ 103  02    pan                127         127       127       127       127       127       127
+ 104  22    pan fine           255         255       255       255       255       255       255
+ 105  03    tilt               127         127       127       127       127       127       127
+ 106  23    tilt fine          255         255       255       255       255       255       255
+ 107  04    red                  0           0         0         0         0         0         0
+ 108  24    red fine?            0           0         0         0         0         0         0
+ 109  05    green                0           0         0         0         0         0         0
+ 110  06    blue                 0           0         0         0         0         0         0
+ 111  07    amber                0           0         0         0         0         0         0
+ 112  08    white                0           0         0         0         0         0         0
+ 113  09    colour wheel         0           0         0         0         0         0         0
+ 114  0a    gobo                 0           0         0         0         0         0         0
+ 115  0b    gobo rotation        0           0         0         0         0         0         0
+ 116  0c    shutter              0           0         0         0         0         0         0
+ 117  0d    iris                 0           0         0         0         0         0         0
+ 118  0e    frost                0           0         0         0         0         0         0
+ 119  0f    focus                0           0         0         0         0         0         0
+ 120  10    prism                0           0         0         0         0         0         0
+ 121  11    zoom                 0           0         0         0         0         0         0
+ 122  12    custom 1             0           0         0         0         0         0         0
+ 123  13    UV / custom 2?       0           0         0         0         0         0         0
+ 124  14    pan/tilt speed                   0         0         0         0         0         0
+ 125  80    no fader                         0         0         0         0         0         0
+ 126  00    code 00?                         0         0         0         0         0         0
+ 127  15    code 15?                         0         0         0         0         0         0
+
+Other channels not 0 (idle / cue / fader 50% / fader 0% / fader 100% / released): none

@@ -1,0 +1,30 @@
+LPD test "clear_closed", 2026-10-28_09-11-06, artnet universe 16
+F1, F2 P10. What CLEAR with EDIT closed keeps: F1 In 100 % R, F2 In 50 % G set in EDIT; (a) EDIT closed and opened, no CLEAR; (b) closed, CLEAR, opened (F2 selected last); (c) set again with F1 selected last, closed, CLEAR, opened; (d) CLEAR in EDIT.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue  set, F2 last  a closeda reopenedb cleared closedb reopenedb cleared in editset, F1 lastc cleared closedc reopenedd cleared in edit
+   1  01    intensity           25         255         0       255         0       255         0       255         0         0         0
+   2  02    pan                127         127       127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255
+   6  04    red                  0         255         0       255         0       255         0       255         0         0         0
+   7  05    green                0           0         0         0         0         0         0         0         0         0         0
+   8  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue  set, F2 last  a closeda reopenedb cleared closedb reopenedb cleared in editset, F1 lastc cleared closedc reopenedd cleared in edit
+  11  01    intensity            0         128         0       128         0         0         0       128         0       128         0
+  12  02    pan                127         127       127       127       127       127       127       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  17  05    green                0         255         0       255         0         0         0       255         0       255         0
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (set, F2 last / a closed / a reopened / b cleared closed / b reopened / b cleared in edit / set, F1 last / c cleared closed / c reopened / d cleared in edit): none

@@ -1,0 +1,233 @@
+{
+  "about": "2 fixtures (P10), Sinus on intensity, In 100 %. pb1-7: FX speed 5, 10, 25, 50, 75, 100, -50 %. pb8: speed 50 % and the playback speed knob at +0.5, -0.5, +1, -1, 0. pb9: phase 25 % on both (no spread).",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 25000
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 15000
+    },
+    {
+      "op": "snap",
+      "name": "pb2"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb3"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb4"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb5"
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb6"
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "snap",
+      "name": "pb7"
+    },
+    {
+      "op": "release",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 7,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 7,
+      "value": -0.5
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 7,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 7,
+      "value": -1.0
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 7,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "release",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "snap",
+      "name": "pb9"
+    },
+    {
+      "op": "release",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    }
+  ]
+}

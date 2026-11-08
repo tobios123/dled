@@ -1,0 +1,157 @@
+{
+  "about": "F1 P10, F2 probe (27 ch) at 21. Two normal playbacks set the same attributes to different values: pb1 red 80 % green 20 % pan 25 % gobo 80 %, pb2 red 30 % green 60 % pan 75 % gobo 30 % (both In 50 %). HTP or LTP for colour, wheels, position? Then pb3 background with red 50 %.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "a"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "a then b"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "b released"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "b then a"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "bg then a"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "bg a b"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "a then bg"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

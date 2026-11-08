@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- The fixture library (PATCH > PERSONALITY): per manufacturer the models,
+     per model one profile or several modes. A profile is two hex digits per
+     DMX channel, the LPU's function code for it (lib/core/fixture_codes.dart):
+     01 dimmer, 04 red, 05 green, 06 blue, 08 white, 0C strobe, 80 no fader,
+     12 custom 1 ... This public copy has one made-up example; add fixtures with
+     tool/personality_add.py. A fuller library of your own can sit next to it
+     as personalities.local.xml (not in Git): it is used instead when present. -->
+<personalities>
+    <manufacturer label="Generic">
+        <model label="RGBW Par" class="Led">
+            <mode label="4 ch">04050608</mode>
+            <mode label="8 ch">01040506080C8012</mode>
+        </model>
+    </manufacturer>
+</personalities>

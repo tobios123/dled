@@ -1,0 +1,111 @@
+{
+  "about": "F1 P10. GO while a playback releases (2026-10-29: the LPU goes on with the next cue, our box started cue 1). pb1 R / G / B, fade 2 s, Loop: GO (R), release, GO halfway -> ?; GO to B, release, GO halfway -> ?; release, wait until released, GO -> R.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    },
+    {
+      "op": "snap",
+      "name": "R"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "R releasing"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    },
+    {
+      "op": "snap",
+      "name": "GO while releasing R"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    },
+    {
+      "op": "snap",
+      "name": "next"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    },
+    {
+      "op": "snap",
+      "name": "GO while releasing that"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    },
+    {
+      "op": "snap",
+      "name": "GO after the release"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    }
+  ]
+}

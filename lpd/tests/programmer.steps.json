@@ -1,0 +1,214 @@
+{
+  "about": "F1, F2 P10; pb1 runs F1 red In 50 %. EDIT open, F1 selected: programmer In 100 %, green, pan; then F2 selected (not in a cue): In, blue; an FX; CLEAR; EDIT closed. Then LOAD of pb1 cue 1.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "edit open"
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "F1 selected"
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "prog In"
+    },
+    {
+      "op": "prog",
+      "values": {
+        "G": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "prog G"
+    },
+    {
+      "op": "prog",
+      "values": {
+        "Pan": 0,
+        "Tilt": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "prog pan"
+    },
+    {
+      "op": "select",
+      "slots": [
+        1
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "F2 selected"
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 128,
+        "B": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "F2 prog"
+    },
+    {
+      "op": "progFx",
+      "fx": [
+        "intensity",
+        "Sinus",
+        100,
+        50,
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "snap",
+      "name": "F2 fx"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "edit closed"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "cleared"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 0,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "loaded"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "loaded, pb1 released"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "end"
+    }
+  ]
+}

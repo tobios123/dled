@@ -1,0 +1,92 @@
+{
+  "about": "8 fixtures (P10), In 100 %, phase spread, speed 50 %: pb1 intensity Random, pb2 colour Random, pb3 Full Twinkle (90 s each), pb4 intensity Random at speed 100 % (60 s): how often a random event comes and what it does.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 90000
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 90000
+    },
+    {
+      "op": "snap",
+      "name": "pb2"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 90000
+    },
+    {
+      "op": "snap",
+      "name": "pb3"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 60000
+    },
+    {
+      "op": "snap",
+      "name": "pb4"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    }
+  ]
+}

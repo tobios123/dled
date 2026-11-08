@@ -1,0 +1,25 @@
+LPD test "extra", 2026-10-27_22-33-32, artnet universe 16
+F1 P10 at 1; F2 (In, In fine, pan, pan fine, R) at 11. pb1: In 50 % red pan 75 % fade 2 s, GO from released 3 times. pb2 Bounce, 8 GOs. pb3 / pb4 exclusive (red / green), pb5 normal (blue). pb6: cue 1 snap, cue 2 fade 1 s delay 1 s. pb7: one cue delay 1 s fade 1 s from released. pb8 Solo (F1 white) with GO held, pb9 (F2) running.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue  bounce go1bounce go2bounce go3bounce go4bounce go5bounce go6bounce go7bounce go8normal+excl a   +excl bexcl b released delay 0.5 delay 1.5   delay 3     d 0.5     d 1.5       d 3 solo held   solo up
+   1  01    intensity          128         255       255       255       255       255       255       255       255       128       128       128       255       255       255       255       255       255       255         0
+   2  02    pan                191         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+   6  04    red                255         255         0         0         0       255         0         0         0       255         0         0       127         0         0         0         0         0         0         0
+   7  05    green                0           0       255         0       255         0       255         0       255         0       255         0       127       255       255         0         0         0         0         0
+   8  06    blue                 0           0         0       255         0         0         0       255         0       255       255       255         0         0         0       127       255       255         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0       255         0
+
+Fixture 2 "F2" at DMX 11 (P5, 5 ch)
+  ch  code  channel            cue  bounce go1bounce go2bounce go3bounce go4bounce go5bounce go6bounce go7bounce go8normal+excl a   +excl bexcl b released delay 0.5 delay 1.5   delay 3     d 0.5     d 1.5       d 3 solo held   solo up
+  11  01    intensity          128           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0       255
+  12  21    intensity fine?      0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0       254
+  13  02    pan                191         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  14  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  15  04    red                255           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0       255       255
+
+Other channels not 0 (bounce go1 / bounce go2 / bounce go3 / bounce go4 / bounce go5 / bounce go6 / bounce go7 / bounce go8 / normal+excl a / +excl b / excl b released / delay 0.5 / delay 1.5 / delay 3 / d 0.5 / d 1.5 / d 3 / solo held / solo up): none

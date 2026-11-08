@@ -1,0 +1,67 @@
+LPD test "open", 2026-10-27_22-42-45, artnet universe 16
+F1, F2 P10 at 1 / 11; F3 In R Rfine G Gfine B Bfine at 21; F4 P10 invert pan at 31; F5 profile 01 15 04 05 at 41, F6 01 00 04 05 at 46 (unknown codes in the middle). Playbacks 41-51 (never used before): intensity memory, fader during a fade, FX with fades, HTP with FX, invert + Circle, colour FX with fine channels; then the programmer: FX, LOAD with and without CLEAR.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+   1  01    intensity          204         204        76       204       255       255       204        12         0       255       210       100         0         0         0         0
+   2  02    pan                127         127       127       127       127       127       127       127       127       127       255       152       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255       222       209       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127       122       253       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255       106       144       255       255       255       255
+   6  04    red                255         255       255       255         0         0       255         0         0         0         0         0         0         0         0         0
+   7  05    green                0           0         0         0       255         0         0         0         0         0         0         0         0         0         0         0
+   8  06    blue                 0           0         0         0         0       255         0         0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+  11  01    intensity            0           0         0         0         0         0         0       255         0       255       210       100         0         0         0         0
+  12  02    pan                127         127       127       127       127       127       127         7       127       127       255       152       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       156       255       255       222       209       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127        84       127       127       122       253       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       137       255       255       106       144       255       255       255       255
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  17  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 3 "F3" at DMX 21 (P7, 7 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+  21  01    intensity            0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  22  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  23  24    red fine?            0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  24  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  25  25    G                    0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  26  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  27  26    B                    0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 4 "F4" at DMX 31 (P10, 10 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+  31  01    intensity            0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  32  02    pan                127         128       128       128       128       128       128       128       128       128       128       128       128       128       128       128
+  33  22    pan fine           255           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  34  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  35  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  36  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  37  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  38  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  39  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  40  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 5 "F5" at DMX 41 (P4, 4 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+  41  01    intensity            0           0         0         0         0         0         0         0       255         0         0         0         0         0         0         0
+  42  15    code 15?                       127       127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  43  04    red                  0           0         0         0         0         0         0         0       128         0         0         0         0         0         0         0
+  44  05    green                0           0         0         0         0         0         0         0        64         0         0         0         0         0         0         0
+
+Fixture 6 "F6" at DMX 46 (P4, 4 ch)
+  ch  code  channel            cue      mem c1    mem c2mem again c1 cut againfader againafter release all    htp fxunknown codes   prog fxprog circleload, programmer fullload after clearedit closededit reopenedcleared in edit
+  46  01    intensity            0           0         0         0         0         0         0         0       255         0         0         0         0         0         0         0
+  47  00    code 00?                         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  48  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  49  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (mem c1 / mem c2 / mem again c1 / cut again / fader again / after release all / htp fx / unknown codes / prog fx / prog circle / load, programmer full / load after clear / edit closed / edit reopened / cleared in edit): none

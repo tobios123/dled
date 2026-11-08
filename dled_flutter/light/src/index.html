@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="theme-color" content="#2b2b2f">
+<title>DLED</title>
+<!-- "Add to home screen": its own icon, opens without browser bars (iPad /
+     iPhone; Android Chrome only for https pages) -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DLED">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" data-page="playback">
+  <div id="top">
+    <div class="grp">
+      <button id="bPatch">PATCH</button><button id="bOptions">OPTIONS</button>
+    </div>
+    <span id="led"></span>
+    <span id="logo" aria-label="DLED"><svg id="dlogo" viewBox="0 0 55.1 16" aria-hidden="true"><path fill-rule="evenodd" d="M0 0h6.5a8 8 0 0 1 0 16H0z M9.1 8a2.6 2.6 0 1 0 -5.2 0a2.6 2.6 0 1 0 5.2 0z"/><circle cx="6.5" cy="8" r="1.7" fill="#fff"/><clipPath id="dstripes"><rect x="16" y="0" width="40" height="1.25"/><rect x="16" y="2.11" width="40" height="1.25"/><rect x="16" y="4.21" width="40" height="1.25"/><rect x="16" y="6.32" width="40" height="1.25"/><rect x="16" y="8.43" width="40" height="1.25"/><rect x="16" y="10.54" width="40" height="1.25"/><rect x="16" y="12.64" width="40" height="1.25"/><rect x="16" y="14.75" width="40" height="1.25"/></clipPath><g clip-path="url(#dstripes)"><g transform="translate(16.5 0)" fill="none" stroke="currentColor" stroke-width="2.86" stroke-linecap="round" stroke-linejoin="round"><path d="M1.43 1.43V11.07A3.5 3.5 0 0 0 4.93 14.57H9.6"/><path transform="translate(13 0)" d="M9.6 1.43H4.93A3.5 3.5 0 0 0 1.43 4.93V11.07A3.5 3.5 0 0 0 4.93 14.57H9.6M1.43 8H8.6"/><path transform="translate(26 0)" d="M3.93 1.43H4.6A6.57 6.57 0 0 1 4.6 14.57H3.93A2.5 2.5 0 0 1 1.43 12.07V3.93A2.5 2.5 0 0 1 3.93 1.43Z"/></g></g></svg><span id="fs" title="Full screen">&#x26F6;</span></span>
+    <span class="fill"></span>
+    <div class="grp" id="modes">
+      <button id="bEdit">EDIT</button><button id="bRelease">RELEASE</button><button id="bRename">RENAME</button><button id="bSwap">SWAP</button><button id="bProps">PROPS</button>
+    </div>
+    <div class="grp" id="posModes" hidden>
+      <button id="bPosStore">STORE</button><button id="bPosRename">RENAME</button><button id="bPosSwap">SWAP</button><button id="bPosDelete">DELETE</button><button id="bPosMode" class="wide">SELECTED</button>
+    </div>
+    <div class="grp" id="back" hidden><button id="bBack">&lsaquo;</button></div>
+  </div>
+  <div id="pgPlayback" class="page">
+    <div id="grid"></div>
+    <div id="faders"></div>
+  </div>
+  <div id="pgEdit" class="page" hidden></div>
+  <div id="pgPositions" class="page" hidden></div>
+  <div id="pgPatch" class="page" hidden></div>
+  <div id="pgOptions" class="page" hidden></div>
+</div>
+<div id="dialogs"></div>
+<div id="pull">&#8635; release to reload</div>
+<script src="core.js"></script>
+<script src="ui.js"></script>
+<script src="playback.js"></script>
+<script src="edit.js"></script>
+<script src="positions.js"></script>
+<script src="patch.js"></script>
+<script src="options.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

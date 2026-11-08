@@ -1,0 +1,116 @@
+{
+  "about": "F1 P10. The one LOAD that worked (follow_delay): pb1 running, EDIT, F1 selected and set, EDIT closed, CLEAR (with EDIT closed: kept), EDIT, LOAD pb1.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 255,
+        "G": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "prog"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "edit again"
+    },
+    {
+      "op": "load",
+      "pb": 0,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "loaded"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "loaded, pb1 released"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+LPD test "programmer", 2026-10-27_22-34-22, artnet universe 16
+F1, F2 P10; pb1 runs F1 red In 50 %. EDIT open, F1 selected: programmer In 100 %, green, pan; then F2 selected (not in a cue): In, blue; an FX; CLEAR; EDIT closed. Then LOAD of pb1 cue 1.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue         pb1 edit openF1 selected   prog In    prog G  prog panF2 selected   F2 prog     F2 fxedit closed   cleared    loadedloaded, pb1 released       end
+   1  01    intensity          128         128         0         0       255       255       255       255       255       255       128       128       255       255         0
+   2  02    pan                127         127       127       127       127       127         0         0         0         0       127       127         0         0       127
+   3  22    pan fine           255         255       255       255       255       255         0         0         0         0       255       255         0         0       255
+   4  03    tilt               127         127       127       127       127       127       255       255       255       255       127       127       255       255       127
+   5  23    tilt fine          255         255       255       255       255       255       254       254       254       254       255       255       254       254       255
+   6  04    red                255         255         0         0         0         0         0         0         0         0       255       255         0         0         0
+   7  05    green                0           0         0         0         0       255       255       255       255       255         0         0       255       255         0
+   8  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue         pb1 edit openF1 selected   prog In    prog G  prog panF2 selected   F2 prog     F2 fxedit closed   cleared    loadedloaded, pb1 released       end
+  11  01    intensity            0           0         0         0         0         0         0         0       128       255         0         0         0         0         0
+  12  02    pan                127         127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255       255       255
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  17  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  18  06    blue                 0           0         0         0         0         0         0         0       255       255         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (pb1 / edit open / F1 selected / prog In / prog G / prog pan / F2 selected / F2 prog / F2 fx / edit closed / cleared / loaded / loaded, pb1 released / end): none

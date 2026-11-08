@@ -1,0 +1,168 @@
+{
+  "about": "Probe (27 ch) at DMX 1. pb1: cue 1 every attribute 20 % (snap), cue 2 80 % fade 2 s, cue 3 20 % fade 2 s delay 1 s, then release. pb2: 80 % fade 3 s from idle, release. pb3 the same at playback speed +0.5, pb4 at -0.5. pb5: GO to cue 2 in the middle of cue 1's 3 s fade.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "a"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "b"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 4500
+    },
+    {
+      "op": "snap",
+      "name": "c"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 2,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 2,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "speed",
+      "pb": 3,
+      "value": -0.5
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 8000
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "speed",
+      "pb": 3,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 4500
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    }
+  ]
+}

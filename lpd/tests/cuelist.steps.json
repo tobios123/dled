@@ -1,0 +1,424 @@
+{
+  "about": "F1 P10. Cues: 1 red, 2 green, 3 blue (In 100 %). pb1 Loop, pb2 Bounce, pb3 Off, pb4 Random: GO again and again. pb5: cues 1 and 2 with follow, fade 0.5 s, one GO. pb6: a cue with delay 1 s. pb7: 2 cues, repeat Off, GO past the end.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb1 go1"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb1 go2"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb1 go3"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb1 go4"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb1 go5"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go1"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go2"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go3"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go4"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go5"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb2 go6"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb3 go1"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb3 go2"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb3 go3"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb3 go4"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb3 go5"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go1"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go2"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go3"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go4"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go5"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go6"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go7"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go8"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "pb4 go9"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "snap",
+      "name": "follow"
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "past end"
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "release",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "about": "The apps' cue encoder (encodeCueBlocks) against the LPU: probe 1 with intensity 200/255, red 50 %, pan full left, tilt 3/4, gobo 1/3; the report's \"cue\" column is what the encoder means, the snap what the LPU does.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "snap",
+      "name": "cue"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    }
+  ]
+}

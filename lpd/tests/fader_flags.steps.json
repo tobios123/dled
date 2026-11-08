@@ -1,0 +1,188 @@
+{
+  "about": "F1 P10 at 1; F2 RGB at 11; F3 RGB with virtual dimmer at 14; F4 P10 invert pan at 21; F5 P10 invert tilt at 31; F6 P10 swap pan / tilt at 41. One cue: In 100 %, R 100 %, G 50 %, B 25 %, pan 25 %, tilt 75 %. The playback fader from 100 % down to 0 % in steps of 10 %.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "100%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.9
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "90%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.8
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "80%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.7
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "70%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.6
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "60%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "50%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "40%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "30%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "20%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "10%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "0%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.25
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "25%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    }
+  ]
+}

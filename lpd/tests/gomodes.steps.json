@@ -1,0 +1,254 @@
+{
+  "about": "F1, F2 P10. pb1 Toggle (F1 red), pb2 Flash mode (F1 green), pb3 Solo (F1 blue), pb4 Go (F2 white), pb5 Go with fader 30 % (F1 red, In 50 %): the FLASH button on it idle and running, pb6 Go with a 2 s fade: FLASH.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "toggle on"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "toggle off"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "goDown",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash held"
+    },
+    {
+      "op": "goUp",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash let go"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "solo"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "flashDown",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "solo flashed"
+    },
+    {
+      "op": "flashUp",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "solo flash up"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "flashDown",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash idle"
+    },
+    {
+      "op": "flashUp",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash idle up"
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "running 30%"
+    },
+    {
+      "op": "flashDown",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash running"
+    },
+    {
+      "op": "flashUp",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "flash running up"
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "flashDown",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 600
+    },
+    {
+      "op": "snap",
+      "name": "flash fade 0.6"
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "flash fade 2.1"
+    },
+    {
+      "op": "flashUp",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 600
+    },
+    {
+      "op": "snap",
+      "name": "flash fade up"
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

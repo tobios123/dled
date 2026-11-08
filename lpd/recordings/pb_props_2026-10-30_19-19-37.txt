@@ -1,0 +1,82 @@
+LPD test "pb_props", 2026-10-30_19-19-37, artnet universe 16
+Six P10, each lit by one playback. Exclusive: pb1, pb2 (same row), pb9 (next row), pb64 (last row) exclusive, pb3 not: does one release the others, also over rows ("banks")? Repeat Off: pb4 two follow cues, delay 0.5 s: released at the end or staying?
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+   1  01    intensity          255         255         0         0         0         0         0         0         0         0
+   2  02    pan                127         127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+   6  04    red                255         255         0         0         0         0         0         0         0         0
+   7  05    green                0           0         0         0         0         0         0         0         0         0
+   8  06    blue                 0           0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+  11  01    intensity            0           0       255       255       255       255         0         0       255       255
+  12  02    pan                127         127       127       127       127       127       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+  16  04    red                  0           0       255       255       255       255         0         0         0         0
+  17  05    green                0           0         0         0         0         0         0         0       255       255
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0         0         0         0
+
+Fixture 3 "F3" at DMX 21 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+  21  01    intensity            0           0         0       255       255       255         0         0         0         0
+  22  02    pan                127         127       127       127       127       127       127       127       127       127
+  23  22    pan fine           255         255       255       255       255       255       255       255       255       255
+  24  03    tilt               127         127       127       127       127       127       127       127       127       127
+  25  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+  26  04    red                  0           0         0       255       255       255         0         0         0         0
+  27  05    green                0           0         0         0         0         0         0         0         0         0
+  28  06    blue                 0           0         0         0         0         0         0         0         0         0
+  29  07    amber                0           0         0         0         0         0         0         0         0         0
+  30  08    white                0           0         0         0         0         0         0         0         0         0
+
+Fixture 4 "F4" at DMX 31 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+  31  01    intensity            0           0         0         0       255       255         0         0         0       255
+  32  02    pan                127         127       127       127       127       127       127       127       127       127
+  33  22    pan fine           255         255       255       255       255       255       255       255       255       255
+  34  03    tilt               127         127       127       127       127       127       127       127       127       127
+  35  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+  36  04    red                  0           0         0         0       255       255         0         0         0         0
+  37  05    green                0           0         0         0         0         0         0         0         0       255
+  38  06    blue                 0           0         0         0         0         0         0         0         0         0
+  39  07    amber                0           0         0         0         0         0         0         0         0         0
+  40  08    white                0           0         0         0         0         0         0         0         0         0
+
+Fixture 5 "F5" at DMX 41 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+  41  01    intensity            0           0         0         0         0       255         0         0         0         0
+  42  02    pan                127         127       127       127       127       127       127       127       127       127
+  43  22    pan fine           255         255       255       255       255       255       255       255       255       255
+  44  03    tilt               127         127       127       127       127       127       127       127       127       127
+  45  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+  46  04    red                  0           0         0         0         0       255         0         0         0         0
+  47  05    green                0           0         0         0         0         0         0         0         0         0
+  48  06    blue                 0           0         0         0         0         0         0         0         0         0
+  49  07    amber                0           0         0         0         0         0         0         0         0         0
+  50  08    white                0           0         0         0         0         0         0         0         0         0
+
+Fixture 6 "F6" at DMX 51 (P10, 10 ch)
+  ch  code  channel            cue         pb1pb2 same rowpb9 next rowpb64 last rowpb3 not exclusiveOff, 3 s laterOff, GO againpb1 then pb8pb9 then pb16
+  51  01    intensity            0           0         0         0         0         0         0         0         0         0
+  52  02    pan                127         127       127       127       127       127       127       127       127       127
+  53  22    pan fine           255         255       255       255       255       255       255       255       255       255
+  54  03    tilt               127         127       127       127       127       127       127       127       127       127
+  55  23    tilt fine          255         255       255       255       255       255       255       255       255       255
+  56  04    red                  0           0         0         0         0         0         0         0         0         0
+  57  05    green                0           0         0         0         0         0         0         0         0         0
+  58  06    blue                 0           0         0         0         0         0         0         0         0         0
+  59  07    amber                0           0         0         0         0         0         0         0         0         0
+  60  08    white                0           0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (pb1 / pb2 same row / pb9 next row / pb64 last row / pb3 not exclusive / Off, 3 s later / Off, GO again / pb1 then pb8 / pb9 then pb16): none

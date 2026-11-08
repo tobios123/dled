@@ -1,0 +1,479 @@
+{
+  "about": "F1, F2 P10 at 1 / 11; F3 In R Rfine G Gfine B Bfine at 21; F4 P10 invert pan at 31; F5 profile 01 15 04 05 at 41, F6 01 00 04 05 at 46 (unknown codes in the middle). Playbacks 41-51 (never used before): intensity memory, fader during a fade, FX with fades, HTP with FX, invert + Circle, colour FX with fine channels; then the programmer: FX, LOAD with and without CLEAR.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "mem c1"
+    },
+    {
+      "op": "go",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "mem c2"
+    },
+    {
+      "op": "release",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "mem again c1"
+    },
+    {
+      "op": "release",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "release",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "go",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "snap",
+      "name": "cut again"
+    },
+    {
+      "op": "release",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "go",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "intensity",
+      "pb": 42,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "release",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "intensity",
+      "pb": 42,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "fader again"
+    },
+    {
+      "op": "release",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "after release all"
+    },
+    {
+      "op": "release",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 43
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "intensity",
+      "pb": 43,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "intensity",
+      "pb": 43,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "release",
+      "pb": 43
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "go",
+      "pb": 44
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "release",
+      "pb": 44
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "go",
+      "pb": 45
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "go",
+      "pb": 45
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "release",
+      "pb": 45
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "go",
+      "pb": 46
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 44
+    },
+    {
+      "op": "wait",
+      "ms": 6000
+    },
+    {
+      "op": "snap",
+      "name": "htp fx"
+    },
+    {
+      "op": "release",
+      "pb": 44
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "release",
+      "pb": 46
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 47
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "release",
+      "pb": 47
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 48
+    },
+    {
+      "op": "wait",
+      "ms": 12000
+    },
+    {
+      "op": "release",
+      "pb": 48
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "unknown codes"
+    },
+    {
+      "op": "release",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "select",
+      "slots": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 128
+      }
+    },
+    {
+      "op": "progFx",
+      "fx": [
+        "intensity",
+        "Sinus",
+        100,
+        50,
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "snap",
+      "name": "prog fx"
+    },
+    {
+      "op": "progFx",
+      "fx": [
+        "position",
+        "Circle",
+        100,
+        50,
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "snap",
+      "name": "prog circle"
+    },
+    {
+      "op": "load",
+      "pb": 50,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "load, programmer full"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 50,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "load after clear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "edit closed"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "edit reopened"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "cleared in edit"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    }
+  ]
+}

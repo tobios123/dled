@@ -1,0 +1,17 @@
+LPD test "load_when", 2026-10-28_07-47-25, artnet universe 16
+F1 P10. Which LOAD the LPU answers: pb2 idle, pb2 idle with F1 selected, pb1 while it runs, pb2 while pb3 runs (red 33 / 67 / 100 % for pb1-3).
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue        idleidle, F1 selectedpb1 runningpb2 while pb3 runs
+   1  01    intensity          255           0         0         0         0
+   2  02    pan                127         127       127       127       127
+   3  22    pan fine           255         255       255       255       255
+   4  03    tilt               127         127       127       127       127
+   5  23    tilt fine          255         255       255       255       255
+   6  04    red                 85           0         0         0         0
+   7  05    green                0           0         0         0         0
+   8  06    blue                 0           0         0         0         0
+   9  07    amber                0           0         0         0         0
+  10  08    white                0           0         0         0         0
+
+Other channels not 0 (idle / idle, F1 selected / pb1 running / pb2 while pb3 runs): none

@@ -1,0 +1,334 @@
+{
+  "about": "F1 P10 at 1; F2 (In, In fine, pan, pan fine, R) at 11. pb1: In 50 % red pan 75 % fade 2 s, GO from released 3 times. pb2 Bounce, 8 GOs. pb3 / pb4 exclusive (red / green), pb5 normal (blue). pb6: cue 1 snap, cue 2 fade 1 s delay 1 s. pb7: one cue delay 1 s fade 1 s from released. pb8 Solo (F1 white) with GO held, pb9 (F2) running.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go1"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go2"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go3"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go4"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go5"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go6"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go7"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 700
+    },
+    {
+      "op": "snap",
+      "name": "bounce go8"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "normal+excl a"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "+excl b"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "excl b released"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "delay 0.5"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "delay 1.5"
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "delay 3"
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "d 0.5"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "d 1.5"
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "d 3"
+    },
+    {
+      "op": "release",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "goDown",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "solo held"
+    },
+    {
+      "op": "goUp",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "solo up"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

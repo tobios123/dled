@@ -1,0 +1,231 @@
+{
+  "about": "F1, F2 P10. Edits while playing, as the app sends them: pb1 (F1 R / G / B) on cue 1, INSERT a cue after it, GO onto the new (empty) cue and on, DELETE the cue it is on, GO; pb2 (F2 W) on, SWAP pb1 / pb2 while both run, GO; INSERT pb3 cue 2 and RECORD F1 (In 100 %, W) into it, GO through pb3.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "pb1 c1"
+    },
+    {
+      "op": "insertCue",
+      "pb": 0,
+      "at": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "inserted"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "on the new cue"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "next (G)"
+    },
+    {
+      "op": "deleteCue",
+      "pb": 0,
+      "cue": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "current deleted"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "go after delete"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "pb2 on"
+    },
+    {
+      "op": "swap",
+      "pb": 0,
+      "with": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "swapped"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "go slot 1 after swap"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "go slot 2 after swap"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "prog",
+      "values": {
+        "In": 255,
+        "W": 255
+      }
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "insertCue",
+      "pb": 2,
+      "at": 1
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "record",
+      "pb": 2,
+      "cue": 1
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "pb3 c1"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "pb3 recorded c2"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

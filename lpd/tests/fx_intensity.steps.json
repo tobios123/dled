@@ -1,0 +1,212 @@
+{
+  "about": "8 fixtures (P10). pb1-5: each intensity waveform, In 100 %, size 100, speed 50, phase spread over the 8. pb6 size 50, pb7 In 50 %, pb8 no In value, pb9 size 25, pb10 Sinus without phase spread.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb2"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb3"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb4"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb5"
+    },
+    {
+      "op": "release",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb6"
+    },
+    {
+      "op": "release",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb7"
+    },
+    {
+      "op": "release",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb8"
+    },
+    {
+      "op": "release",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb9"
+    },
+    {
+      "op": "release",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb10"
+    },
+    {
+      "op": "release",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "about": "Patch and static values: probe 1 at DMX 1 gets a cue with a different value in every record byte; probe 2 at DMX 101 is in no cue. Idle, the cue at full, the playback fader at 50 % and 0 %, and after release.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "snap",
+      "name": "idle"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "snap",
+      "name": "cue"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "fader 50%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "fader 0%"
+    },
+    {
+      "op": "intensity",
+      "pb": 0,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "fader 100%"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "released"
+    }
+  ]
+}

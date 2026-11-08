@@ -1,0 +1,143 @@
+{
+  "about": "F1 P10. LOAD (EDIT open, after CLEAR) of playbacks 1, 16, 32, 33, 41, 64, each with its own cue (In and a different level of red).",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 0,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb1"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 15,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb16"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 31,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb32"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 32,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb33"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 40,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb41"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 63,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "load pb64"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    }
+  ]
+}

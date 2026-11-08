@@ -1,0 +1,37 @@
+# Large and binary files
+*.pcapng
+*.pcap
+*.bin
+*.tar
+*.apk
+*.apks
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Flutter build output (dled_flutter/.gitignore covers the rest)
+dled_flutter/build/
+dled_flutter/**/ephemeral/
+
+# IDE and local tool settings
+.idea/
+*.iml
+.vscode/
+.claude/settings.local.json
+
+# Local data: saved shows, show backups, downloads
+/shows/
+lpu_backups/
+lpu_downloads/
+
+# Your own fuller fixture library (the public one has one example)
+dled_flutter/assets/personalities.local.xml
+
+# LPD test runs: console logs, replay files and box recordings are made
+# again from lpd/tests + lpd/recordings (lpd/make_replay.py, lpd/compare.py)
+lpd/recordings/_run_*.log
+lpd/replay/
+lpd/box_recordings/

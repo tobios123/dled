@@ -1,0 +1,108 @@
+LPD test "fx_position", 2026-10-27_22-13-47, artnet universe 16
+8 fixtures (P10, 16-bit pan / tilt). pb1-6: each position waveform at the centre, size 100, speed 50, phase spread. pb7 Circle size 50, pb8 Circle around pan 25 % / tilt 75 %, pb9 Circle without spread, pb10 Circle and In.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+   1  01    intensity          255         255       255       255       255       255       255       255       255       255        63
+   2  02    pan                127         125       114       253       125       127       191       126        70       125       125
+   3  22    pan fine           255         220        62        68       220       255       190       239       227       220       220
+   4  03    tilt               127           0         0         0       127       125        20        64        64         0         0
+   5  23    tilt fine          255           5        48         0       255       220        20        67        48         5         5
+   6  04    red                  0           0         0         0         0         0         0         0         0         0         0
+   7  05    green                0           0         0         0         0         0         0         0         0         0         0
+   8  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  11  01    intensity          255         255       255       255       255       255       255       255       255       255       240
+  12  02    pan                127          35       255       124        35       127        20        82         0       125        35
+  13  22    pan fine           255         184        85       198       184       255        20        10         0       220       184
+  14  03    tilt               127          39        33         0       127        35       128        83        97         0        39
+  15  23    tilt fine          255          77         4         0       255       184       127       211         4         5        77
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  17  05    green                0           0         0         0         0         0         0         0         0         0         0
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 3 "F3" at DMX 21 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  21  01    intensity          255         255       255       255       255       255       255       255       255       255       255
+  22  02    pan                127           0       140         0         0       127        97        64         0       125         0
+  23  22    pan fine           255           9        46         0         9       255        97        69         0       220         9
+  24  03    tilt               127         130       121         3       127         0       141       129       185         0       130
+  25  23    tilt fine          255         236       230       187       255         9       140       116       230         5       236
+  26  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  27  05    green                0           0         0         0         0         0         0         0         0         0         0
+  28  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  29  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  30  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 4 "F4" at DMX 31 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  31  01    intensity          255         255       255       255       255       255       255       255       255       255       255
+  32  02    pan                127          39         0         0        39       127       133        84         0       125        39
+  33  22    pan fine           255         223       131         0       223       255       132        27         0       220       223
+  34  03    tilt               127         220       214       132       127        39        57       174       255         0       220
+  35  23    tilt fine          255         210        96        57       255       223        57        58       255         5       210
+  36  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  37  05    green                0           0         0         0         0         0         0         0         0         0         0
+  38  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  39  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  40  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 5 "F5" at DMX 41 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  41  01    intensity          255         255       255       255       255       255       255       255       255       255       255
+  42  02    pan                127         128       111         0       128       127       161       128        55       125       128
+  43  22    pan fine           255         142        28       184       142       255       160        70       138       220       142
+  44  03    tilt               127         255       255       255       127       128       139       191       255         0       255
+  45  23    tilt fine          255         253       182       254       255       142       138       190       255         5       253
+  46  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  47  05    green                0           0         0         0         0         0         0         0         0         0         0
+  48  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  49  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  50  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 6 "F6" at DMX 51 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  51  01    intensity          255         255       255       255       255       255       255       255       255       255       255
+  52  02    pan                127         219       254       129       219       127        85       173       148       125       219
+  53  22    pan fine           255          45       249        54        45       255        85       104       159       220        45
+  54  03    tilt               127         217       224       255       127       219       217       172       255         0       217
+  55  23    tilt fine          255         210         7       254       255        45       216       187       255         5       210
+  56  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  57  05    green                0           0         0         0         0         0         0         0         0         0         0
+  58  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  59  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  60  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 7 "F7" at DMX 61 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  61  01    intensity          255         255       255       255       255       255       255       255       255       255        88
+  62  02    pan                127         255       143       255       255       127       116       191       191       125       255
+  63  22    pan fine           255         252        81       254       252       255       116       189       196       220       252
+  64  03    tilt               127         126       135       254       127       255       101       127       199         0       126
+  65  23    tilt fine          255         166       171        69       255       252       101        83       171         5       166
+  66  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  67  05    green                0           0         0         0         0         0         0         0         0         0         0
+  68  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  69  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  70  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Fixture 8 "F8" at DMX 71 (P10, 10 ch)
+  ch  code  channel            cue         pb1       pb2       pb3       pb4       pb5       pb6       pb7       pb8       pb9      pb10
+  71  01    intensity          255         255       255       255       255       255       255       255       255       255         0
+  72  02    pan                127         217         0       255       217       127       188       172       159       125       217
+  73  22    pan fine           255          66       213       254        66       255       187       116       130       220        66
+  74  03    tilt               127          36        42       125       127       217        65        82       106         0        36
+  75  23    tilt fine          255          68       201       199       255        66        65        80       201         5        68
+  76  04    red                  0           0         0         0         0         0         0         0         0         0         0
+  77  05    green                0           0         0         0         0         0         0         0         0         0         0
+  78  06    blue                 0           0         0         0         0         0         0         0         0         0         0
+  79  07    amber                0           0         0         0         0         0         0         0         0         0         0
+  80  08    white                0           0         0         0         0         0         0         0         0         0         0
+
+Other channels not 0 (pb1 / pb2 / pb3 / pb4 / pb5 / pb6 / pb7 / pb8 / pb9 / pb10): none

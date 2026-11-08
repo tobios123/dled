@@ -1,0 +1,157 @@
+{
+  "about": "Six P10, each lit by one playback. Exclusive: pb1, pb2 (same row), pb9 (next row), pb64 (last row) exclusive, pb3 not: does one release the others, also over rows (\"banks\")? Repeat Off: pb4 two follow cues, delay 0.5 s: released at the end or staying?",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb2 same row"
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb9 next row"
+    },
+    {
+      "op": "go",
+      "pb": 63
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb64 last row"
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb3 not exclusive"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "snap",
+      "name": "Off, 3 s later"
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "snap",
+      "name": "Off, GO again"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb1 then pb8"
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 15
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "pb9 then pb16"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

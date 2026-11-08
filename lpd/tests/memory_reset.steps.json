@@ -1,0 +1,77 @@
+{
+  "about": "Run as the first thing after a power cycle. Playbacks 41-43 remember 80 % / 100 % / 100 % from the \"open\" test (2026-10-27). Each gets a cue In 50 % red, fade 3 s: a jump to 204 / 255 / 255 first = the memory survived the power cycle; a fade from 0 = it was reset.",
+  "steps": [
+    {
+      "op": "go",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb41 +0.25 s"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "release",
+      "pb": 40
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "go",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb42 +0.25 s"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "release",
+      "pb": 41
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "go",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb43 +0.25 s"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "release",
+      "pb": 42
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    }
+  ]
+}

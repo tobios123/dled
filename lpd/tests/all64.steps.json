@@ -1,0 +1,92 @@
+{
+  "about": "64 fixtures P8 (In, pan, tilt, R, G, B, A, W) at 1, 9 ... 505: all 512 channels. pb1: per fixture i In (i+1)/64, R i*4, G 255-i*4, pan i/63, tilt 1-i/63. pb2 intensity Sinus, pb3 Rainbow, pb4 Circle, each phase spread over the 64.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "snap",
+      "name": "pb1"
+    },
+    {
+      "op": "release",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb2"
+    },
+    {
+      "op": "release",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb3"
+    },
+    {
+      "op": "release",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    },
+    {
+      "op": "go",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "snap",
+      "name": "pb4"
+    },
+    {
+      "op": "release",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 1500
+    }
+  ]
+}

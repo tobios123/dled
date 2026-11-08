@@ -1,0 +1,13 @@
+{
+  "name": "DLED",
+  "short_name": "DLED",
+  "description": "DLED - remote control for the LPU-1",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#2b2b2f",
+  "theme_color": "#2b2b2f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

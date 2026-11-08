@@ -1,0 +1,164 @@
+{
+  "about": "F1 P10. Which LOAD the LPU answers: pb2 idle, pb2 idle with F1 selected, pb1 while it runs, pb2 while pb3 runs (red 33 / 67 / 100 % for pb1-3).",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 1,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "idle"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "select",
+      "slots": [
+        0
+      ]
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 1,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "idle, F1 selected"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 0,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "pb1 running"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "edit",
+      "value": true
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "load",
+      "pb": 1,
+      "cue": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "pb2 while pb3 runs"
+    },
+    {
+      "op": "progClear"
+    },
+    {
+      "op": "edit",
+      "value": false
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    }
+  ]
+}

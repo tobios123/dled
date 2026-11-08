@@ -1,0 +1,40 @@
+name: dled
+description: DLED - programs and plays an LPU-1 over the network
+publish_to: 'none'
+version: 1.20.0+120
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  xml: ^6.5.0
+  path_provider: ^2.1.4
+  file_picker: ^8.1.2
+  wakelock_plus: ^1.2.8
+  package_info_plus: ^8.0.2
+  # the browser build talks to the LPU through the bridge's WebSocket (core/udp_web.dart)
+  web: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # personalities.xml (public example) and personalities.local.xml (your
+    # own fuller library, not in Git): every file directly in assets/
+    - assets/
+
+  fonts:
+    - family: DejaVuSans
+      fonts:
+        - asset: assets/fonts/DejaVuSans.ttf
+        - asset: assets/fonts/DejaVuSans-Bold.ttf
+          weight: 700

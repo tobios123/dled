@@ -1,0 +1,335 @@
+{
+  "about": "F1 P10. Go mode: does a cue start when GO is pressed or when it is let go, and after how long a hold not at all (2026-10-28: GO held 1 s did nothing)? pb1 R / G / B (Loop, fade 0): GO held 1 s, quick GO, then GO held 0.1 / 0.2 / 0.3 / 0.4 / 0.5 / 0.7 s on the running playback.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "held 1 s"
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "let go"
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "quick GO"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 50
+    },
+    {
+      "op": "snap",
+      "name": "100ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 50
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "100ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 100
+    },
+    {
+      "op": "snap",
+      "name": "200ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 100
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "200ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 150
+    },
+    {
+      "op": "snap",
+      "name": "300ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 150
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "300ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 200
+    },
+    {
+      "op": "snap",
+      "name": "400ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 200
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "400ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "500ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "500ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 350
+    },
+    {
+      "op": "snap",
+      "name": "700ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 350
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "700ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 400
+    },
+    {
+      "op": "snap",
+      "name": "800ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 400
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "800ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 450
+    },
+    {
+      "op": "snap",
+      "name": "900ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 450
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "900ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "1000ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "1000ms up"
+    },
+    {
+      "op": "goDown",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 750
+    },
+    {
+      "op": "snap",
+      "name": "1500ms down"
+    },
+    {
+      "op": "wait",
+      "ms": 750
+    },
+    {
+      "op": "goUp",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "1500ms up"
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

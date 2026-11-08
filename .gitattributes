@@ -1,0 +1,6 @@
+# .show files and test data are compared byte for byte (CRLF / LF as the
+# reference app wrote them): never convert their line endings on checkout.
+*.show -text
+dled_flutter/test/core_data/** -text
+lpd/tests/** -text
+lpd/recordings/** -text

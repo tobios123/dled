@@ -1,0 +1,17 @@
+LPD test "release_go", 2026-10-29_15-48-50, artnet universe 16
+F1 P10. GO while a playback releases (2026-10-29: the LPU goes on with the next cue, our box started cue 1). pb1 R / G / B, fade 2 s, Loop: GO (R), release, GO halfway -> ?; GO to B, release, GO halfway -> ?; release, wait until released, GO -> R.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue           RR releasingGO while releasing R      nextGO while releasing that  releasedGO after the release
+   1  01    intensity          255         255       124       255       255       255         0       255
+   2  02    pan                127         127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255
+   6  04    red                255         255       124         0         0       255         0       255
+   7  05    green                0           0         0       255        15         0         0         0
+   8  06    blue                 0           0         0         0       239         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0
+
+Other channels not 0 (R / R releasing / GO while releasing R / next / GO while releasing that / released / GO after the release): none

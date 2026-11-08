@@ -1,0 +1,30 @@
+LPD test "live_edit", 2026-10-28_17-12-49, artnet universe 16
+F1, F2 P10. Edits while playing, as the app sends them: pb1 (F1 R / G / B) on cue 1, INSERT a cue after it, GO onto the new (empty) cue and on, DELETE the cue it is on, GO; pb2 (F2 W) on, SWAP pb1 / pb2 while both run, GO; RECORD F1 (In 100 %, W) into pb3 cue 2, GO through pb3.
+
+Fixture 1 "F1" at DMX 1 (P10, 10 ch)
+  ch  code  channel            cue      pb1 c1  insertedon the new cue  next (G)current deletedgo after delete    pb2 on   swappedgo slot 1 after swapgo slot 2 after swap    pb3 c1pb3 recorded c2
+   1  01    intensity          255         255       255         0       255       255       255       255         0         0       255         0         0
+   2  02    pan                127         127       127       127       127       127       127       127       127       127       127       127       127
+   3  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255
+   4  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127
+   5  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255
+   6  04    red                255         255       255         0         0         0       255       255         0         0       255         0         0
+   7  05    green                0           0         0         0       255         0         0         0         0         0         0         0         0
+   8  06    blue                 0           0         0         0         0       255         0         0         0         0         0         0         0
+   9  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0
+  10  08    white                0           0         0         0         0         0         0         0         0         0         0         0         0
+
+Fixture 2 "F2" at DMX 11 (P10, 10 ch)
+  ch  code  channel            cue      pb1 c1  insertedon the new cue  next (G)current deletedgo after delete    pb2 on   swappedgo slot 1 after swapgo slot 2 after swap    pb3 c1pb3 recorded c2
+  11  01    intensity            0           0         0         0         0         0         0       255         0       255       255       128       128
+  12  02    pan                127         127       127       127       127       127       127       127       127       127       127       127       127
+  13  22    pan fine           255         255       255       255       255       255       255       255       255       255       255       255       255
+  14  03    tilt               127         127       127       127       127       127       127       127       127       127       127       127       127
+  15  23    tilt fine          255         255       255       255       255       255       255       255       255       255       255       255       255
+  16  04    red                  0           0         0         0         0         0         0         0         0         0         0       255       255
+  17  05    green                0           0         0         0         0         0         0         0         0         0         0         0         0
+  18  06    blue                 0           0         0         0         0         0         0         0         0         0         0         0         0
+  19  07    amber                0           0         0         0         0         0         0         0         0         0         0         0         0
+  20  08    white                0           0         0         0         0         0         0       255         0       255       255         0         0
+
+Other channels not 0 (pb1 c1 / inserted / on the new cue / next (G) / current deleted / go after delete / pb2 on / swapped / go slot 1 after swap / go slot 2 after swap / pb3 c1 / pb3 recorded c2): none

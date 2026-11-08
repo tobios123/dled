@@ -1,0 +1,125 @@
+{
+  "about": "F1 P10. The speed knob on follow cues (2026-10-29: it scales fade + delay until the next cue, not the DMX fade). pb1 R / G / B follow, delay 2 s, fade 0: knob 0, +0.5, -0.5, +1, -1 (stands), 0 while it runs. pb2 the same with fade 2 s, delay 0: knob +1 (the fades are cut short), then 0.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "speed",
+      "pb": 1,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 4500
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.5
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -0.5
+    },
+    {
+      "op": "wait",
+      "ms": 10000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 2000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": -1.0
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 4500
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "speed",
+      "pb": 1,
+      "value": 1.0
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 3000
+    },
+    {
+      "op": "speed",
+      "pb": 1,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 5000
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "speed",
+      "pb": 0,
+      "value": 0.0
+    },
+    {
+      "op": "speed",
+      "pb": 1,
+      "value": 0.0
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    }
+  ]
+}

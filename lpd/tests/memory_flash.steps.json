@@ -1,0 +1,168 @@
+{
+  "about": "F1 P10. Do Flash / Solo go modes and the FLASH button use and set the intensity memory? Each cue In 80 %, fade 3 s, on a playback not used since the power cycle. pb50 Flash (R) and pb51 Solo (G): GO held 4 s, let go, GO held again. pb52 Go (B): FLASH 1 s, then GO.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "goDown",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb50 held 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "snap",
+      "name": "pb50 held 4"
+    },
+    {
+      "op": "goUp",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "goDown",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb50 again 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 1750
+    },
+    {
+      "op": "goUp",
+      "pb": 49
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "goDown",
+      "pb": 50
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb51 held 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "snap",
+      "name": "pb51 held 4"
+    },
+    {
+      "op": "goUp",
+      "pb": 50
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "goDown",
+      "pb": 50
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb51 again 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 1750
+    },
+    {
+      "op": "goUp",
+      "pb": 50
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "flashDown",
+      "pb": 51
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb52 flash 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 750
+    },
+    {
+      "op": "flashUp",
+      "pb": 51
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    },
+    {
+      "op": "go",
+      "pb": 51
+    },
+    {
+      "op": "wait",
+      "ms": 250
+    },
+    {
+      "op": "snap",
+      "name": "pb52 go 0.25"
+    },
+    {
+      "op": "wait",
+      "ms": 3750
+    },
+    {
+      "op": "snap",
+      "name": "pb52 go 4"
+    },
+    {
+      "op": "release",
+      "pb": 51
+    },
+    {
+      "op": "wait",
+      "ms": 4000
+    }
+  ]
+}

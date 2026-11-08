@@ -1,0 +1,383 @@
+{
+  "about": "Flash and Solo side by side, with pb1 (F1 red, pan) and pb2 (F2, on cue 2 green) running. pb3 Flash / pb4 Solo: F3 / F4 R G B, held twice. pb5 / pb6: on F1, white In 50 %. pb7 / pb8: GO on pb9 (F5) / pb10 (F6) during the hold. pb11 / pb12: fade 1 s. pb13 / pb14: fader 30 %.",
+  "steps": [
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "go",
+      "pb": 0
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 300
+    },
+    {
+      "op": "go",
+      "pb": 1
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "running"
+    },
+    {
+      "op": "goDown",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Flash held"
+    },
+    {
+      "op": "goUp",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Flash let go"
+    },
+    {
+      "op": "goDown",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Flash held again"
+    },
+    {
+      "op": "goUp",
+      "pb": 2
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "goDown",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Solo held"
+    },
+    {
+      "op": "goUp",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Solo let go"
+    },
+    {
+      "op": "goDown",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Solo held again"
+    },
+    {
+      "op": "goUp",
+      "pb": 3
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "goDown",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Flash on F1"
+    },
+    {
+      "op": "goUp",
+      "pb": 4
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "after Flash on F1"
+    },
+    {
+      "op": "goDown",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Solo on F1"
+    },
+    {
+      "op": "goUp",
+      "pb": 5
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "after Solo on F1"
+    },
+    {
+      "op": "goDown",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "GO pb9 in Flash"
+    },
+    {
+      "op": "goUp",
+      "pb": 6
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "after that Flash"
+    },
+    {
+      "op": "release",
+      "pb": 8
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "goDown",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "go",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "GO pb10 in Solo"
+    },
+    {
+      "op": "goUp",
+      "pb": 7
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "after that Solo"
+    },
+    {
+      "op": "release",
+      "pb": 9
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "goDown",
+      "pb": 10
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "Flash fade 0.5 s"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "Flash fade 1.5 s"
+    },
+    {
+      "op": "goUp",
+      "pb": 10
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "Flash let go 0.5 s"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "Flash let go 1.5 s"
+    },
+    {
+      "op": "goDown",
+      "pb": 11
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "Solo fade 0.5 s"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "Solo fade 1.5 s"
+    },
+    {
+      "op": "goUp",
+      "pb": 11
+    },
+    {
+      "op": "wait",
+      "ms": 500
+    },
+    {
+      "op": "snap",
+      "name": "Solo let go 0.5 s"
+    },
+    {
+      "op": "wait",
+      "ms": 1000
+    },
+    {
+      "op": "snap",
+      "name": "Solo let go 1.5 s"
+    },
+    {
+      "op": "goDown",
+      "pb": 12
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Flash fader 30"
+    },
+    {
+      "op": "goUp",
+      "pb": 12
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "goDown",
+      "pb": 13
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "snap",
+      "name": "Solo fader 30"
+    },
+    {
+      "op": "goUp",
+      "pb": 13
+    },
+    {
+      "op": "wait",
+      "ms": 800
+    },
+    {
+      "op": "releaseAll"
+    },
+    {
+      "op": "wait",
+      "ms": 2500
+    }
+  ]
+}
