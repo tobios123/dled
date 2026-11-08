@@ -45,6 +45,25 @@ on the network:
 > and notes, **"the reference app"** means the app that comes with the
 > LPU-1; DLED was tested against it so both can be used side by side.
 
+## Compatibility and where DLED is going
+
+| | with an LPU-1 | with an LPD-1 |
+|---|---|---|
+| **DLED app and light page** | ✅ everything the LPU-1 can do | ✅ the same, plus new DLED features as they come |
+| **The reference app** | ✅ (its own app) | ✅ the LPU-1 features; not the new DLED features |
+
+- **Version 1.x is fully LPU-1 compatible.** Everything in DLED today works
+  with an LPU-1, and the LPD-1 behaves like one. The release tagged
+  [`v1.0`](https://github.com/tobios123/dled/releases/tag/v1.0) is that
+  state, and stays available as it is.
+- **From 2.x the LPD-1 gets features of its own.** They are added on top of
+  the LPU-1 protocol, not in place of it. The app checks what it's talking
+  to (the LPD-1 reports its name and version when it's found) and offers a
+  new feature only where the device has it. With an LPU-1 the app keeps
+  working as in 1.x.
+- Features that need an LPD-1 will be marked **LPD-1 only** in this README
+  and in the app.
+
 ## How the pieces fit
 
 ```mermaid
