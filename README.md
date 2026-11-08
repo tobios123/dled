@@ -66,32 +66,9 @@ on the network:
 
 ## How the pieces fit
 
-```mermaid
-flowchart LR
-    subgraph Control["Control"]
-        APP["📱 DLED app<br/>Windows · Android"]
-        PAGE["🌐 DLED light page<br/>any browser"]
-        CLI["⌨️ dled CLI<br/>and Python tools"]
-    end
-
-    BRIDGE["🔌 DLED bridge<br/>PC or ESP32 box"]
-
-    subgraph Devices["Lighting controllers"]
-        LPU["LPU-1"]
-        LPD["💡 LPD-1<br/>ESP32"]
-    end
-
-    FIX["🔦 Fixtures"]
-
-    APP  -- "VN · UDP 16945" --> LPU
-    APP  -- "VN · UDP 16945" --> LPD
-    CLI  -- "VN · UDP 16945" --> LPU
-    PAGE -- "HTTP + WebSocket" --> BRIDGE
-    BRIDGE -- "VN · UDP 16945" --> LPU
-    BRIDGE -- "VN · UDP 16945" --> LPD
-    LPU -- "DMX · Art-Net · sACN" --> FIX
-    LPD -- "DMX · Art-Net" --> FIX
-```
+<p align="center">
+  <img src="docs/diagrams/pieces.svg" alt="How the pieces fit: the DLED app, light page and CLI talk to an LPU-1 or LPD-1, the light page through the DLED bridge; the devices drive the fixtures">
+</p>
 
 A browser cannot send UDP, so the light page talks to a **bridge** over a
 WebSocket and the bridge sends the datagrams. The app and the CLI talk to
@@ -99,22 +76,9 @@ the device directly.
 
 ## A session, step by step
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant A as DLED app
-    participant L as LPU-1 / LPD-1
-    A->>L: "visual_identify" (broadcast)
-    L-->>A: who am I: name, version, IP
-    A->>L: read fixtures, playbacks, cues
-    L-->>A: the whole show (cue blocks of 4 x 800 bytes)
-    Note over A: the app shows the 64 playbacks
-    A->>L: GO playback 5
-    L-->>A: notification: playback 5 runs cue 1, fading
-    A->>L: fader 5 at 70 %
-    L-->>A: notification: level 70 %
-    Note over L: DMX out follows the show
-```
+<p align="center">
+  <img src="docs/diagrams/session.svg" alt="A session: discovery, reading the show, GO and fader with notifications back">
+</p>
 
 Every write is echoed by the device, and every change (from any app) is
 sent as a notification, so all connected apps stay in step. The full
@@ -158,29 +122,9 @@ details.
 
 ## Features
 
-```mermaid
-mindmap
-  root((DLED app))
-    PLAYBACK
-      64 playbacks with state colours
-      faders, speed knobs, FLASH
-      GO, RELEASE, RELEASE ALL
-      rename, swap, properties
-    EDIT
-      cues: add, remove, fade, delay, follow
-      live programmer
-      intensity, colour, pan and tilt, more channels
-      FX generators
-      POSITIONS: stored pan and tilt per fixture
-    PATCH
-      64 fixture slots and DMX addresses
-      fixture library
-      invert or swap pan and tilt, virtual dimmer
-    OPTIONS
-      find and choose an LPU
-      name, IP, Art-Net, sACN
-      show files: save, open, import, export
-```
+<p align="center">
+  <img src="docs/diagrams/features.svg" alt="The DLED app: PLAYBACK, EDIT, PATCH and OPTIONS and what each holds">
+</p>
 
 - **Live:** every slider, GO and fader goes to the device at once, and changes
   made elsewhere show up in the app.
@@ -205,7 +149,7 @@ firmware/
 analysis/            protocol notes, Python library (analysis/lpu), tools, tests
 lpd/                 DMX measurements of the LPU-1 and the tests behind them
 samples/             example .show files
-docs/images/         pictures for this README
+docs/                pictures and diagrams for this README
 .claude/skills/      Claude Code skills (see "Claude Code skills" below)
 ```
 
@@ -321,12 +265,9 @@ same device.
 
 ## What we tested
 
-```mermaid
-flowchart LR
-    T["32 test shows<br/>(lpd/tests)"] --> LPU["real LPU-1"]
-    LPU -- "Art-Net recordings<br/>(lpd/recordings)" --> R["LPD-1 engine<br/>replays them"]
-    R --> S["score: share of DMX values<br/>within 1 of the LPU-1"]
-```
+<p align="center">
+  <img src="docs/diagrams/tested.svg" alt="Test shows run on a real LPU-1, its Art-Net recorded, the LPD-1 engine replays them and is scored">
+</p>
 
 - **The LPD-1 against a real LPU-1.** 32 test shows were run on an LPU-1,
   covering cues, fades, follow and go modes, FX, the fader, the programmer,

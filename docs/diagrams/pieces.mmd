@@ -1,0 +1,24 @@
+flowchart LR
+    subgraph Control["Control"]
+        APP["📱 DLED app<br/>Windows · Android"]
+        PAGE["🌐 DLED light page<br/>any browser"]
+        CLI["⌨️ dled CLI<br/>and Python tools"]
+    end
+
+    BRIDGE["🔌 DLED bridge<br/>PC or ESP32 box"]
+
+    subgraph Devices["Lighting controllers"]
+        LPU["LPU-1"]
+        LPD["💡 LPD-1<br/>ESP32"]
+    end
+
+    FIX["🔦 Fixtures"]
+
+    APP  -- "VN · UDP 16945" --> LPU
+    APP  -- "VN · UDP 16945" --> LPD
+    CLI  -- "VN · UDP 16945" --> LPU
+    PAGE -- "HTTP + WebSocket" --> BRIDGE
+    BRIDGE -- "VN · UDP 16945" --> LPU
+    BRIDGE -- "VN · UDP 16945" --> LPD
+    LPU -- "DMX · Art-Net · sACN" --> FIX
+    LPD -- "DMX · Art-Net" --> FIX

@@ -1,0 +1,4 @@
+flowchart LR
+    T["32 test shows<br/>(lpd/tests)"] --> LPU["real LPU-1"]
+    LPU -- "Art-Net recordings<br/>(lpd/recordings)" --> R["LPD-1 engine<br/>replays them"]
+    R --> S["score: share of DMX values<br/>within 1 of the LPU-1"]

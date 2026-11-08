@@ -1,0 +1,14 @@
+sequenceDiagram
+    autonumber
+    participant A as DLED app
+    participant L as LPU-1 / LPD-1
+    A->>L: "visual_identify" (broadcast)
+    L-->>A: who am I: name, version, IP
+    A->>L: read fixtures, playbacks, cues
+    L-->>A: the whole show (cue blocks of 4 x 800 bytes)
+    Note over A: the app shows the 64 playbacks
+    A->>L: GO playback 5
+    L-->>A: notification: playback 5 runs cue 1, fading
+    A->>L: fader 5 at 70 %
+    L-->>A: notification: level 70 %
+    Note over L: DMX out follows the show
